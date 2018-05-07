@@ -16,7 +16,7 @@
 theme: jekyll-theme-so-simple
 # remote_theme: mmistakes/so-simple-theme
 locale: en-US
-title: "My Awesome Site"
+title: "My Awesome Site?"
 description: "It really is the best."
 baseurl: "/blog" # the subpath of your site, e.g. "/blog"
 url: https://osseon.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -86,7 +86,7 @@ defaults:
       share: true
 
 # Site Author
-author: 
+author:
   name: Oksu Seon
   picture:
   email: osseon@gmail.com
