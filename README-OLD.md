@@ -46,7 +46,7 @@ If you want to use So Simple with an existing Jekyll site follow these steps:
 3. Run `bundle install` to install Jekyll and all dependencies.
 4. Remove demo posts/pages and replace with your own posts, pages, and any other content you want to move over.
 5. Update posts' and pages' YAML to match variables used by So Simple. Full details below.
-6. Update `_config.yml` and add navigation links and additional author data if applicable. Full details below. 
+6. Update `_config.yml` and add navigation links and additional author data if applicable. Full details below.
 
 **Pro-tip:** Delete the `gh-pages` branch after cloning and start fresh by branching off `master`. There is a bunch of garbage in `gh-pages` used for the theme's demo site that I'm guessing you won't want.
 
@@ -102,7 +102,7 @@ so-simple-theme/
 ├── images/                      # images for posts and pages
 ├── 404.md                       # 404 page
 ├── feed.xml                     # Atom feed template
-├── index.md                     # sample homepage. lists 5 latest posts 
+├── index.md                     # sample homepage. lists 5 latest posts
 └── theme-setup/                 # theme setup page. safe to remove
 ```
 
@@ -136,7 +136,7 @@ Examples:
 url: https://mmistakes.github.io/so-simple-theme
 url: http://localhost:4000
 url: http://yourdomain.com
-url: 
+url:
 ```
 
 #### Google Analytics and Webmaster Tools
@@ -180,7 +180,9 @@ In the sample posts folder you may have noticed `categories: articles` in the YA
 For example. Say you want to group all your posts under blog/ instead of articles/. In your post add `categories: blog` to the YAML front matter, rename or duplicate articles/index.md to blog/index.md and update the *for loop* to limit posts to just the blog category.
 
 ```liquid
+{% raw %}
 {% for post in site.categories.blog %}
+{% endraw %}
 ```
 
 If done correctly /blog/ should be a page index of only posts with a category of `blog`.
