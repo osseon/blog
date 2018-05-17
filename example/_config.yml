@@ -13,21 +13,18 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
-#theme: jekyll-theme-so-simple
-remote_theme: mmistakes/so-simple-theme
-
+theme: jekyll-theme-so-simple
+# remote_theme: mmistakes/so-simple-theme
 locale: en-US
-title: "My Awesome Site?"
-description: "It really is the best."
-baseurl: "/blog" # the subpath of your site, e.g. "/blog"
-#baseurl: ""
-url: "https://osseon.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-logo: # path of site logo, e.g. "/images/logo.png"
+title: "So Simple Development Site"
+description: "A simple Jekyll theme for words and pictures."
+baseurl: "/example" # the subpath of your site, e.g. "/blog"
+url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+logo: "/images/so-simple-site-logo.png" # path of site logo, e.g. "/assets/images/logo.png"
 date_format: "%B %-d, %Y"
-read_time: true # reading time estimates, e.g. true
-words_per_minute:  200
-mathjax: true # MathJax equations, e.g. true
+read_time: true
+words_per_minute: 200
+mathjax: true
 google_fonts:
   - name: "Source Sans Pro"
     weights: "400,400i,700,700i"
@@ -35,21 +32,15 @@ google_fonts:
     weights: "400,400i,700,700i"
 google_analytics: # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 disqus:
-  shortname: "oksuseon" # Disqus shortname, e.g. "my_disqus_shortname"
+  shortname: # Disqus shortname, e.g. "my_disqus_shortname"
 twitter:
-  username: "baftera" # site's Twitter username, e.g. "mmistakes"
-#???google_site_verification: "UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y"
+  username: mmistakes # site's Twitter username
 
 # Liquid
 liquid:
   error_mode: strict
 
-# Convert
-excerpt_separator: <!--more-->
-
-
 # Build settings
-permalink: /:categories/:title/
 markdown: kramdown
 feed:
   path: atom.xml
@@ -59,7 +50,7 @@ paginate: 10
 paginate_path: /page:num/
 
 # Search
-search_full_content: false # can have performance implications for large sites
+search_full_content: false
 
 # Taxonomy pages
 category_archive_path: "/categories/#"
@@ -82,19 +73,16 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-redirect-from
 
-
-## Collections
-#collections:
-#  recipes:
-#    output: true
-#    permalink: /:collection/:path/
-
+# Collections
+collections:
+  recipes:
+    output: true
+    permalink: /:collection/:path/
 
 # Front Matter Defaults
 defaults:
-  # Posts defaults
+  # Post defaults
   - scope:
       path: "_posts"
       type: posts
@@ -102,43 +90,42 @@ defaults:
       layout: post
       comments: true
       share: true
-  ## Recipe defaults
-  #- scope:
-  #    path: "_recipes"
-  #    type: recipes
-  #  values:
-  #    layout: post
-  #    comments: true
-  #    share: true
+  # Recipe defaults
+  - scope:
+      path: "_recipes"
+      type: recipes
+    values:
+      layout: post
+      comments: true
+      share: true
 
 # Site Author
 author:
-  name: Oksu Seon
-  picture:
-  email: osseon@gmail.com
-  twitter: baftera
+  name: Michael Rose
+  picture: /images/michael-rose-photo.jpg
+  email:
+  twitter: mmistakes
   links:
     - title: Twitter
-      url: https://twitter.com/baftera
+      url: https://twitter.com/mmistakes
       icon: fab fa-twitter-square
-    #- title: Instagram
-    #  url: https://instagram.com/mmistakes
-    #  icon: fab fa-instagram
+    - title: Instagram
+      url: https://instagram.com/mmistakes
+      icon: fab fa-instagram
     - title: GitHub
-      url: https://github.com/osseon
+      url: https://github.com/mmistakes
       icon: fab fa-github-square
-
 
 # Footer Links
 footer_links:
   - title: Twitter
-    url: https://twitter.com/baftera
+    url: https://twitter.com/mmistakes
     icon: fab fa-twitter-square
-  #- title: Instagram
-  #  url: https://instagram.com/mmistakes
-  #  icon: fab fa-instagram
+  - title: Instagram
+    url: https://instagram.com/mmistakes
+    icon: fab fa-instagram
   - title: GitHub
-    url: https://github.com/osseon
+    url: https://github.com/mmistakes
     icon: fab fa-github-square
   - title: Feed
     url: atom.xml
