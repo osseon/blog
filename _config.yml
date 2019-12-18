@@ -17,13 +17,13 @@
 #theme: jekyll-theme-so-simple
 remote_theme: mmistakes/so-simple-theme
 
-locale: en-US
-title: "My Awesome Site?"
-description: "It really is the best."
+locale: kr-KO, en-US
+title: "READ ME"
+description: "Memo pad for data science/analysis"
+
 baseurl: "/blog" # the subpath of your site, e.g. "/blog"
-#baseurl: ""
 url: "https://osseon.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-logo: # path of site logo, e.g. "/images/logo.png"
+logo: "/images/terminal_circle.png" # path of site logo, e.g. "/images/logo.png"
 date_format: "%B %-d, %Y"
 read_time: true # reading time estimates, e.g. true
 words_per_minute:  200
@@ -38,9 +38,9 @@ disqus:
   shortname: "oksuseon" # Disqus shortname, e.g. "my_disqus_shortname"
 twitter:
   username: "baftera" # site's Twitter username, e.g. "mmistakes"
-#???google_site_verification: "UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y"
+#google_site_verification: "UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y" ###모르는거
 
-# Liquid
+# Liquid ###모르는거
 liquid:
   error_mode: strict
 
@@ -52,7 +52,7 @@ excerpt_separator: <!--more-->
 permalink: /:categories/:title/
 markdown: kramdown
 feed:
-  path: atom.xml
+  path: atom.xml ###모르눈거
 
 # Pagination - https://jekyllrb.com/docs/pagination/
 paginate: 10
@@ -68,9 +68,10 @@ tag_archive_path: "/tags/#"
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - _posts_not_using/
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
@@ -102,14 +103,6 @@ defaults:
       layout: post
       comments: true
       share: true
-  ## Recipe defaults
-  #- scope:
-  #    path: "_recipes"
-  #    type: recipes
-  #  values:
-  #    layout: post
-  #    comments: true
-  #    share: true
 
 # Site Author
 author:

@@ -8,7 +8,7 @@ source 'https://rubygems.org'
 
 #---------------------------------------------
 # https://rubygems.org/gems/jekyll-theme-so-simple
-gem 'jekyll-theme-so-simple', '~> 3.1', '>= 3.1.1'
+gem 'jekyll-theme-so-simple', '~> 3.2'
 
 #??
 #gem "wdm", "~> 0.1.0" if Gem.win_platform?
